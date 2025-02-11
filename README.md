@@ -1,4 +1,4 @@
-<h1>Hi there 👋, I'm Aman Gupta.</h1>
+<h1>Hi there 👋, I'm Jose J.</h1>
 
 <!-- Header Links -->
 [![Portfolio](https://img.shields.io/badge/-Portfolio-red?style=flat&logo=appveyor&logoColor=white)](https://bento.me/amangupta143)
