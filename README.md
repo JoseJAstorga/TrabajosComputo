@@ -2,4 +2,4 @@
 
 
 <!-- Short Bio -->
-<p>Welcome to my profile! </br> I'm an <b>Student</b> currently building my skills in <b>Machine Learning</b> and <b>Deep Learning.</b> 
+<p>Welcome to my profile! </br> I'm an <b>Student</b> currently building my skills in <b>Chemistry</b> and <b>Mathematics.</b> 
