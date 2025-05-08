@@ -2,172 +2,176 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 0;
+    }
 
-        .button-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            padding: 15px;
-            background-color: #007bff;
-        }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 15px;
+      background-color: #161b22;
+    }
 
-        .button-container a {
-            text-decoration: none;
-            padding: 12px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #0056b3;
-            border-radius: 5px;
-            transition: background 0.3s ease-in-out;
-        }
+    .button-container a {
+      text-decoration: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #238636;
+      border-radius: 5px;
+      transition: background 0.3s ease-in-out;
+    }
 
-        .button-container a:hover {
-            background-color: #003d80;
-        }
+    .button-container a:hover {
+      background-color: #2ea043;
+    }
 
-        .img-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-        }
+    .img-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
 
-        .img-container img {
-            max-width: 100%;
-            height: auto;
-        }
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+    }
 
-        h2 {
-            font-size: 1.8em;
-            margin-top: 20px;
-        }
+    h2 {
+      font-size: 1.8em;
+      margin-top: 20px;
+      color: #58a6ff;
+    }
 
-        .comments {
-            text-align: justify;
-            white-space: pre-wrap;
-            font-family: monospace;
-            padding: 10px;
-            max-width: 90%;
-            margin: auto;
-        }
+    .comments {
+      text-align: justify;
+      white-space: pre-wrap;
+      font-family: monospace;
+      padding: 10px;
+      max-width: 90%;
+      margin: auto;
+    }
 
-        .comment-box {
-            width: 100%;
-            height: 150px;
-            padding: 10px;
-            margin-top: 10px;
-            font-family: monospace;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            resize: none;
-        }
+    .comment-box {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      margin-top: 10px;
+      font-family: monospace;
+      background-color: #161b22;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+      border-radius: 5px;
+      resize: none;
+    }
 
-        @media (max-width: 768px) {
-            .button-container {
-                flex-direction: column;
-                align-items: center;
-            }
+    @media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+        align-items: center;
+      }
 
-            .button-container a {
-                width: 80%;
-                text-align: center;
-            }
-        }
+      .button-container a {
+        width: 80%;
+        text-align: center;
+      }
+    }
 
-        @media (max-width: 480px) {
-            h2 {
-                font-size: 1.5em;
-            }
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.5em;
+      }
 
-            .comments {
-                font-size: 14px;
-            }
+      .comments {
+        font-size: 14px;
+      }
 
-            .button-container a {
-                width: 100%;
-            }
-        }
-    </style>
+      .button-container a {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <div class="button-container">
-            <a href="https://github.com/JoseJAstorga">Perfil de GitHub</a>
-            <a href="index.html" id="homeButton">Home</a>
-            <a href="editor.html">Editor de Código</a>
-        </div>
-    </header>
-
-    <div class="img-container">
-        <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=%2338C2FF&size=50&center=true&vCenter=true&height=60&width=600&lines=Bienvenido+a+mi+perfil!" alt="Title">
-        <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width="250px">
-        <img src="https://readme-typing-svg.herokuapp.com?color=%236FDA44&size=32&center=true&vCenter=true&width=600&height=50&lines=I'm+Alex+Varela+%F0%9F%91%8B;Electrical+Engineer;+Computer+Science+Engineer;+Back-End+Engineer;+Problem+Solver;+Freelancer;+Open-Source+Enthusiast" alt="Headline">
+  <header>
+    <div class="button-container">
+      <a href="https://github.com/JoseJAstorga">Perfil de GitHub</a>
+      <a href="index.html" id="homeButton">Home</a>
+      <a href="editor.html">Editor de Código</a>
     </div>
+  </header>
 
-    <h3 align="left">Activity:</h3>
+  <div class="img-container">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=%2338C2FF&size=50&center=true&vCenter=true&height=60&width=600&lines=Bienvenido+a+mi+perfil!" alt="Title">
+    <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width="250px">
+    <img src="https://readme-typing-svg.herokuapp.com?color=%236FDA44&size=32&center=true&vCenter=true&width=600&height=50&lines=I'm+Alex+Varela+%F0%9F%91%8B;Electrical+Engineer;+Computer+Science+Engineer;+Back-End+Engineer;+Problem+Solver;+Freelancer;+Open-Source+Enthusiast" alt="Headline">
+  </div>
 
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=JoseJAstorga&bg_color=100f0f&color=4c5e9e&line=4c569e&point=403e41&area=true&hide_border=true" alt="Actividad de GitHub">
+  <h3 align="left" style="margin-left: 20px;">Activity:</h3>
 
-    <div align="center">
-        <a href="https://github.com/JoseJAstorga">
-            <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=JoseJAstorga&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="Top Langs">
-            <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JoseJAstorga&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="Stats">
-        </a>
-    </div>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=JoseJAstorga&bg_color=0d1117&color=58a6ff&line=238636&point=c9d1d9&area=true&hide_border=true" alt="Actividad de GitHub">
 
-    <p align="center">
-        <a href="https://github.com/JoseJAstorga">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=JoseJAstorga&&theme=tokyonight" alt="Streak Stats">
-        </a>
-    </p>
+  <div align="center">
+    <a href="https://github.com/JoseJAstorga">
+      <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=JoseJAstorga&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="Top Langs">
+      <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JoseJAstorga&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="Stats">
+    </a>
+  </div>
 
-    <div class="container" style="border: 2px solid #ccc; padding: 20px; border-radius: 10px;">
-        <h2>
-            <picture>
-                <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width="50px">
-            </picture>
-            Comentarios sobre la práctica o clase
-        </h2>
-        <hr>
-        <textarea class="comment-box" id="commentBox" placeholder="Escribe tus comentarios aquí..."></textarea>
-        <hr>
-        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" onclick="saveAndReload();">Actualizar</button>
-    </div>
+  <p align="center">
+    <a href="https://github.com/JoseJAstorga">
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=JoseJAstorga&&theme=tokyonight" alt="Streak Stats">
+    </a>
+  </p>
 
-    <script>
-        window.onload = function () {
-            const savedComments = localStorage.getItem("comments");
-            if (savedComments) {
-                document.getElementById("commentBox").value = savedComments;
-            } else {
-                document.getElementById("commentBox").value = `💻 ...............`;
-            }
+  <div class="container" style="border: 2px solid #30363d; padding: 20px; border-radius: 10px;">
+    <h2>
+      <picture>
+        <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width="50px">
+      </picture>
+      Comentarios sobre la práctica o clase
+    </h2>
+    <hr style="border-color: #30363d;">
+    <textarea class="comment-box" id="commentBox" placeholder="Escribe tus comentarios aquí..."></textarea>
+    <hr style="border-color: #30363d;">
+    <button style="background-color: #238636; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" onclick="saveAndReload();">Actualizar</button>
+  </div>
 
-            if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
-                document.getElementById("homeButton").style.display = "none";
-            }
-        };
+  <script>
+    window.onload = function () {
+      const savedComments = localStorage.getItem("comments");
+      if (savedComments) {
+        document.getElementById("commentBox").value = savedComments;
+      } else {
+        document.getElementById("commentBox").value = `💻 ...............`;
+      }
 
-        function saveAndReload() {
-            const comments = document.getElementById("commentBox").value;
-            localStorage.setItem("comments", comments);
-            window.location.reload();
-        }
-    </script>
+      if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+        document.getElementById("homeButton").style.display = "none";
+      }
+    };
+
+    function saveAndReload() {
+      const comments = document.getElementById("commentBox").value;
+      localStorage.setItem("comments", comments);
+      window.location.reload();
+    }
+  </script>
 </body>
 
 </html>
