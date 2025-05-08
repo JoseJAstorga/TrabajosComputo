@@ -14,7 +14,6 @@
             padding: 0;
         }
 
-        /* Contenedor de botones */
         .button-container {
             display: flex;
             justify-content: center;
@@ -38,7 +37,6 @@
             background-color: #003d80;
         }
 
-        /* Imágenes y texto */
         .img-container {
             display: flex;
             justify-content: center;
@@ -57,7 +55,6 @@
             margin-top: 20px;
         }
 
-        /* Comentarios de la práctica */
         .comments {
             text-align: justify;
             white-space: pre-wrap;
@@ -67,7 +64,6 @@
             margin: auto;
         }
 
-        /* Estilo para el área de comentarios */
         .comment-box {
             width: 100%;
             height: 150px;
@@ -79,7 +75,6 @@
             resize: none;
         }
 
-        /* Media Queries */
         @media (max-width: 768px) {
             .button-container {
                 flex-direction: column;
@@ -112,36 +107,34 @@
     <header>
         <div class="button-container">
             <a href="https://github.com/JoseJAstorga">Perfil de GitHub</a>
-            <a href="index.html" id="homeButton">Home</a> <!-- Este es el botón que se esconderá solo en index.html -->
+            <a href="index.html" id="homeButton">Home</a>
             <a href="editor.html">Editor de Código</a>
         </div>
     </header>
 
     <div class="img-container">
-        <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=%2338C2FF&size=50&center=true&vCenter=true&height=60&width=600&lines=Bienvenido+a+mi+perfil!"
-            alt="Title">
+        <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=%2338C2FF&size=50&center=true&vCenter=true&height=60&width=600&lines=Bienvenido+a+mi+perfil!" alt="Title">
         <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width="250px">
-        <img src="https://readme-typing-svg.herokuapp.com?color=%236FDA44&size=32&center=true&vCenter=true&width=600&height=50&lines=I'm+Alex+Varela+%F0%9F%91%8B;Electrical+Engineer;+Computer+Science+Engineer;+Back-End+Engineer;+Problem+Solver;+Freelancer;+Open-Source+Enthusiast"
-            alt="Headline">
+        <img src="https://readme-typing-svg.herokuapp.com?color=%236FDA44&size=32&center=true&vCenter=true&width=600&height=50&lines=I'm+Alex+Varela+%F0%9F%91%8B;Electrical+Engineer;+Computer+Science+Engineer;+Back-End+Engineer;+Problem+Solver;+Freelancer;+Open-Source+Enthusiast" alt="Headline">
     </div>
 
-<h3 align="left">Activity:</h3>
+    <h3 align="left">Activity:</h3>
 
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=JoseJAstorga&bg_color=100f0f&color=4c5e9e&line=4c569e&point=403e41&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=JoseJAstorga&bg_color=100f0f&color=4c5e9e&line=4c569e&point=403e41&area=true&hide_border=true" alt="Actividad de GitHub">
 
-<div align="center">
-  <a href="https://github.com/JoseJAstorga">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=JoseJAstorga&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="JoseJAstorga"/>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JoseJAstorga&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="JoseJAstorga"/>
-  </a>
-</div>
-<p align="center">
-  <a href="https://github.com/JoseJAstorga">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=JoseJAstorga&&theme=tokyonight" alt="JoseJAstorga" />
-  </a>
-</p>
+    <div align="center">
+        <a href="https://github.com/JoseJAstorga">
+            <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=JoseJAstorga&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="Top Langs">
+            <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JoseJAstorga&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="Stats">
+        </a>
+    </div>
 
-    
+    <p align="center">
+        <a href="https://github.com/JoseJAstorga">
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=JoseJAstorga&&theme=tokyonight" alt="Streak Stats">
+        </a>
+    </p>
+
     <div class="container" style="border: 2px solid #ccc; padding: 20px; border-radius: 10px;">
         <h2>
             <picture>
@@ -150,44 +143,31 @@
             Comentarios sobre la práctica o clase
         </h2>
         <hr>
-
-        <!-- Cuadro para escribir los comentarios -->
         <textarea class="comment-box" id="commentBox" placeholder="Escribe tus comentarios aquí..."></textarea>
-
         <hr>
-
-        <!-- Botón de actualizar -->
-        <button
-            style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
-            onclick="saveAndReload();">
-            Actualizar
-        </button>
+        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" onclick="saveAndReload();">Actualizar</button>
     </div>
 
     <script>
-        // Cargar los comentarios guardados al cargar la página
         window.onload = function () {
             const savedComments = localStorage.getItem("comments");
             if (savedComments) {
                 document.getElementById("commentBox").value = savedComments;
             } else {
-                // Texto predeterminado si no hay comentarios guardados
-                document.getElementById("commentBox").value = `💻 ...............
+                document.getElementById("commentBox").value = `💻 ...............`;
+            }
 
-            // Ocultar el botón de Home si estamos en la página index.html
             if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
                 document.getElementById("homeButton").style.display = "none";
             }
         };
 
-        // Función para guardar los comentarios en localStorage y recargar la página
         function saveAndReload() {
             const comments = document.getElementById("commentBox").value;
-            localStorage.setItem("comments", comments); // Guardar los comentarios
-            window.location.reload(); // Recargar la página
+            localStorage.setItem("comments", comments);
+            window.location.reload();
         }
     </script>
-
 </body>
 
 </html>
